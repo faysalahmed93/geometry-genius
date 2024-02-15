@@ -22,7 +22,7 @@
           class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
         >
           <!-- Triangle -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl">
             <figure>
               <img src="images/triangle.png" alt="" />
             </figure>
@@ -63,7 +63,7 @@
           </div>
           <!-- Triangle -->
           <!-- Rectangle -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl">
             <figure>
               <img src="images/rectangle.png" alt="" />
             </figure>
@@ -75,26 +75,26 @@
                   id="RectangleWidthInput"
                   class="w-24 p-1"
                   type="text"
-                  placeholder="W"
+                  placeholder="width"
                 />
                 <span class="mr-6 ml-4">cm</span>
                 <input
-                  id="TriangLenghtInput"
+                  id="RectangleLengthInput"
                   class="w-24 p-1"
                   type="text"
-                  placeholder="I"
+                  placeholder="Length"
                 />
                 <span>cm</span>
               </div>
               <div>
                 <p class="text-2xl">
-                  Area : <span id="TriangleArea">0</span>
+                  Area : <span id="RectangleArea">0</span>
                   <span>cm <sup>2</sup></span>
                 </p>
               </div>
               <div class="card-actions">
                 <button
-                  onclick="calculateFunctionArea()"
+                  onclick="calculateRectangleArea()"
                   class="btn btn-primary w-full"
                 >
                   Calculate
@@ -104,7 +104,7 @@
           </div>
           <!-- Rectangle -->
           <!-- Parallelogram -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl">
             <figure>
               <img src="images/rectangle.png" alt="" />
             </figure>
@@ -120,7 +120,7 @@
                 />
                 <span class="mr-6 ml-4">cm</span>
                 <input
-                  id="ParallelogramheightInput"
+                  id="ParallelogramHeightInput"
                   class="w-24 p-1"
                   type="text"
                   placeholder="h"
@@ -135,7 +135,7 @@
               </div>
               <div class="card-actions">
                 <button
-                  onclick="calculateFunctionArea()"
+                  onclick="calculateParallelogramArea()"
                   class="btn btn-primary w-full"
                 >
                   Calculate
@@ -145,7 +145,7 @@
           </div>
           <!-- Parallelogram -->
           <!-- Rhombus -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl">
             <figure>
               <img src="images/rhombus.png" alt="" />
             </figure>
@@ -176,7 +176,7 @@
               </div>
               <div class="card-actions">
                 <button
-                  onclick="calculateFunctionArea()"
+                  onclick="calculateRhombusArea()"
                   class="btn btn-primary w-full"
                 >
                   Calculate
@@ -186,7 +186,7 @@
           </div>
           <!-- Rhombus -->
           <!-- Pentagon -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl">
             <figure>
               <img src="images/pentagon.png" alt="" />
             </figure>
@@ -217,7 +217,7 @@
               </div>
               <div class="card-actions">
                 <button
-                  onclick="calculateFunctionArea()"
+                  onclick="calculatePentagonArea()"
                   class="btn btn-primary w-full"
                 >
                   Calculate
@@ -227,7 +227,7 @@
           </div>
           <!-- Pentagon -->
           <!-- Ellipse -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl">
             <figure>
               <img src="images/ellipse.png" alt="" />
             </figure>
@@ -258,7 +258,7 @@
               </div>
               <div class="card-actions">
                 <button
-                  onclick="calculateFunctionArea()"
+                  onclick="calculateEllipseArea()"
                   class="btn btn-primary w-full"
                 >
                   Calculate
@@ -278,5 +278,10 @@
     </main>
     <footer></footer>
     <script src="javascript/Triangle.js"></script>
+    <script src="javascript/Rectangle.js"></script>
+    <script src="javascript/Parallelogram.js"></script>
+    <script src="javascript/Rhombus.js"></script>
+    <script src="javascript/Pentagon.js"></script>
+    <script src="javascript/Ellipse.js"></script>
   </body>
 </html>
